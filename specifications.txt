@@ -3,6 +3,9 @@ colors: blue, black and white
 theme: glassmorphism
 preferrably animated glass like designs 
 that spin or move to reveal the text or perhaps fade away upon hover
+message: Feel free to follow your own creative inclinations. images has pictures 
+from the client but you can pick whatever from the internet. preferrably something
+local. Will try to get more from the client.
 
 1. Landing Page
 Name of Business: Napt Enterprise
