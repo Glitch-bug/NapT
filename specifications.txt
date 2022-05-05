@@ -1,0 +1,77 @@
+
+colors: blue, black and white
+theme: glassmorphism
+preferrably animated glass like designs 
+that spin or move to reveal the text or perhaps fade away upon hover
+
+1. Landing Page
+Name of Business: Napt Enterprise
+Motto or Catch phrase: We sell glass
+descriptor: Here at Napt we sell several beautiful aluminium profiles,
+ glass works and accessories. That said we'd love to make your 
+homes and business more beautiful.
+
+2. About Us
+GLASS EXPERTS
+https://www.myglassexperts.com/-{
+Your projects are safe with our team of experienced glass glaziers 
+and installers. We work on Aluminum Windows, Sliding Doors, 
+Sliding Windows, Frameless Tempered Glass Doors, Storefronts & Panels, 
+Frosted Glass, Stainless Steel & Glass Balustrades, and more.
+}
+
+KSP Limited 
+http://www.kspglazing.com/ - {
+The mandate is to provide affordable, sustainable quality 
+building materials and mostly green building solution of uPVC windows, 
+doors and roofing for both residential and commercial purposes. 
+
+We have a team that understands from design to construction, 
+production to marketing and Project Advisory Services & Management.
+}
+
+
+{
+We are dedicated to providing quality products at affordable prices. 
+Our products are built with durable materials that ensure a longer 
+lifespan. Our produucts are built with durable materials that 
+ensure a longer lifespan. Our products are made with the intent 
+of providing quality of life improvements for our clients                                                                                                                                                        
+}
+3. Services
+Napt (original) {
+	- Glass
+	- Profiles
+	- Alucobond
+	- Fabrication
+	- Interior decor
+}
+CRYSTAL GLAZING LTD
+https://www.crystalglazingghana.com/ - {
+- Frame
+- Window sash
+- Mullion
+- Lap Profile
+- Door Sash
+- Outward Door Sash
+}
+
+ALUCOBOND GHANA
+https://www.alucobondghana.com/glazing-systems -{
+GLAZING SYSTEMS - {
+curtaing walling, cladding, 
+patent walling, total envelop, 
+sandwich panel
+}	Window Systems - {
+		composite windows, window replacements,
+		a-rated windows, upvc windows,
+		aluminium windows, folding windows, 
+	}
+}
+4. Technology
+
+5. Testimonies
+
+6. Contact Us
+
+7. Location
