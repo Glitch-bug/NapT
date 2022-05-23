@@ -11316,25 +11316,49 @@ section {
 .glass {
   grid-area: glass;
 }
+.glass .textish {
+  bottom: 62%;
+  width: 25%;
+}
 
 .profiles {
   grid-area: profiles;
+}
+.profiles .textish {
+  bottom: 62%;
+  width: 52.5%;
 }
 
 .alucobond {
   grid-area: aluco;
 }
+.alucobond .textish {
+  bottom: 31%;
+  width: 52.5%;
+}
 
 .accessories {
   grid-area: access;
+}
+.accessories .textish {
+  bottom: 0%;
+  width: 25%;
 }
 
 .interior-design {
   grid-area: interior;
 }
+.interior-design .textish {
+  bottom: 0%;
+  width: 25%;
+}
 
 .fabrication {
   grid-area: fabrication;
+}
+.fabrication .textish {
+  bottom: 0%;
+  width: 25%;
 }
 
 .service {
@@ -11343,6 +11367,15 @@ section {
 .service img {
   min-height: 100%;
   min-width: 100%;
+}
+.service .textish {
+  position: absolute;
+  background-color: #0C2337;
+}
+.service .textish p {
+  color: white;
+  position: relative;
+  top: 5px;
 }
 
 .service-back {
@@ -11476,6 +11509,7 @@ section {
   main {
     background-color: #EFFFFF;
     height: max-content;
+    z-index: -100;
   }
   main .glass-img {
     display: none !important;
@@ -11495,7 +11529,7 @@ section {
     line-height: 2.5;
   }
   main .intro-comp form {
-    margin: 3rem 0 2rem 0;
+    margin: 3rem 0 1rem 0;
   }
   main .intro-comp form input {
     width: 85% !important;
@@ -11505,16 +11539,91 @@ section {
     padding: 0 1rem !important;
   }
 
-  .about-back {
+  .about-back, .service-back {
     display: none;
   }
 
   .about {
     background-color: rgba(186, 198, 209, 0.1725490196);
     width: 100%;
+    z-index: 100;
   }
   .about p {
     color: #1A0634;
+  }
+
+  .glass {
+    grid-area: glass;
+  }
+  .glass .textish {
+    bottom: 80.5%;
+    width: 80%;
+  }
+
+  .profiles {
+    grid-area: profiles;
+  }
+  .profiles .textish {
+    bottom: 64%;
+    width: 80%;
+  }
+
+  .alucobond {
+    grid-area: aluco;
+  }
+  .alucobond .textish {
+    bottom: 48%;
+    width: 80%;
+  }
+
+  .accessories {
+    grid-area: access;
+  }
+  .accessories .textish {
+    bottom: 32%;
+    width: 80%;
+  }
+
+  .interior-design {
+    grid-area: interior;
+  }
+  .interior-design .textish {
+    bottom: 15.5%;
+    width: 80%;
+  }
+
+  .fabrication {
+    margin-bottom: 2rem;
+  }
+  .fabrication .textish {
+    position: relative;
+    bottom: -0.5%;
+    z-index: 100;
+    width: 80%;
+  }
+
+  .servi {
+    display: grid;
+    width: 80%;
+    height: max-content;
+    grid-template-areas: "glass" "profiles" "aluco" "access" "interior" "fabrication";
+    grid-gap: 50px;
+  }
+
+  .service {
+    height: 300px;
+  }
+  .service img {
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .service .textish {
+    background-color: transparent;
+    position: absolute;
+  }
+  .service .textish p {
+    color: black;
+    font-size: 1.5rem;
   }
 }
 
