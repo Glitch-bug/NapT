@@ -11275,7 +11275,7 @@ section {
 .about-back {
   position: absolute;
   width: 100%;
-  height: 160vh;
+  height: 200vh;
   left: 0;
   z-index: -100;
   opacity: 52%;
@@ -11303,6 +11303,55 @@ section {
 
 .third {
   clear: right;
+}
+
+.servi {
+  display: grid;
+  width: 80%;
+  height: 130vh;
+  grid-template-areas: "glass profiles profiles" "aluco aluco fabrication" "access interior fabrication";
+  grid-gap: 20px;
+}
+
+.glass {
+  grid-area: glass;
+}
+
+.profiles {
+  grid-area: profiles;
+}
+
+.alucobond {
+  grid-area: aluco;
+}
+
+.accessories {
+  grid-area: access;
+}
+
+.interior-design {
+  grid-area: interior;
+}
+
+.fabrication {
+  grid-area: fabrication;
+}
+
+.service {
+  overflow: hidden;
+}
+.service img {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.service-back {
+  position: absolute;
+  width: 100%;
+  height: 200vh;
+  left: 0;
+  z-index: -100;
+  opacity: 52%;
 }
 
 @media (max-width: 835px) and (min-width: 768px) {
