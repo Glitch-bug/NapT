@@ -11129,6 +11129,10 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.glass-nav {
+  display: none;
+}
+
 nav {
   background-color: #0F0B43;
   transition: all 0.5s ease;
@@ -11225,10 +11229,6 @@ main button[type=submit] {
   bottom: 3rem;
   left: 50%;
   height: 3rem;
-}
-
-.glass-nav {
-  display: none;
 }
 
 .home-backk {
