@@ -1,3 +1,4 @@
+
 @import "custom";
 
 // General
@@ -21,6 +22,7 @@ body{
 
 nav{
     background-color: $blue-background;
+    background-image: $black-silver-grad;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -145,6 +147,16 @@ nav{
     filter: opacity(0.52);
     -webkit-filter: opacity(0.52);
     z-index: -100;
+}
+
+#glass-ping {
+    position:relative;
+    // top:-100px;
+    height: 300px;
+    width: 500px;
+    background-image: $black-blue-white-grad-alpha;
+    z-index: 5;
+    border-radius: 3%;
 }
 
 //Sections styling
@@ -574,3 +586,5 @@ section{
 
 
 //Hope you have fun understanding my code
+
+// FUCK U!!! LOLOLOLOL

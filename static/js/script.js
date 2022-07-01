@@ -28,4 +28,9 @@ let reveal = () => {
 //   }
 }
 
+// ping pong window
+// fps = setInterval();
+
+var divWindow = document.querySelector("#glass-ping");
+divWindow.style.top = -300;
 window.addEventListener('scroll', reveal);
