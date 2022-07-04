@@ -95,13 +95,13 @@ nav{
         color: $slogan-p;
         margin-bottom: $spacer * 3;
     }
-    img{
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-    }
+    // img{
+    //     border-radius: 20px;
+    //     -webkit-border-radius: 20px;
+    //     -moz-border-radius: 20px;
+    //     -ms-border-radius: 20px;
+    //     -o-border-radius: 20px;
+    // }
 
     input{
         height: 3rem;
@@ -150,13 +150,13 @@ nav{
 }
 
 #glass-ping {
-    position:relative;
-    // top:-100px;
+    position:absolute;
+    top:50vh;
     height: 300px;
     width: 500px;
     background-image: $black-blue-white-grad-alpha;
     z-index: 5;
-    border-radius: 3%;
+    border-radius: 10px;
 }
 
 //Sections styling
@@ -201,21 +201,50 @@ section{
 }
 
 //About Us
+#about-us {
+    background-color: $slogan-blue;
+    background-image: none;
+    padding: 0px;
+    margin: 0px;
+
+
+    h1{
+        font-size: $spacer * 3.5;
+        color: $slogan-blue;
+        padding: $spacer * 3;
+        text-align: left;
+    }
+
+    .sect-head {
+        width: 100vw;
+        background-color: $nav-blue;
+        margin: 0px;
+        position: relative;
+        top:-18vh;
+        border-bottom: solid 3px $send-col;
+    }
+}
+
 
 .about{
-    background-color: $slogan-blue;
+    background-color: $nav-blue;
     padding: 1.5rem 2rem;
     margin-bottom: 5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     width: 80%;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: 0px;
+    border-left: solid 3px $send-col;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
     box-shadow: 0 5px 10px $dark;
 
     p{
-        color: $sect-color;
+        // color: $sect-color; Use for About
+        color: $slogan-blue;
+        text-align: justify;
     }
 }
 
@@ -228,6 +257,11 @@ section{
 }
 
 //Services
+#services {
+    background-color: $nav-blue;
+    margin: 0px;
+}
+
 
 .servi{
     display: grid;

@@ -10183,13 +10183,6 @@ main p {
   color: rgba(2, 8, 35, 0.78);
   margin-bottom: 3rem;
 }
-main img {
-  border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -moz-border-radius: 20px;
-  -ms-border-radius: 20px;
-  -o-border-radius: 20px;
-}
 main input {
   height: 3rem;
   outline: none;
@@ -10229,12 +10222,13 @@ main button[type=submit] {
 }
 
 #glass-ping {
-  position: relative;
+  position: absolute;
+  top: 50vh;
   height: 300px;
   width: 500px;
   background-image: linear-gradient(35deg, rgba(208, 208, 208, 0.307), rgba(17, 17, 84, 0.603), rgba(19, 18, 18, 0.884));
   z-index: 5;
-  border-radius: 3%;
+  border-radius: 10px;
 }
 
 section {
@@ -10276,20 +10270,45 @@ section {
   opacity: 52%;
 }
 
-.about {
+#about-us {
   background-color: #020823;
+  background-image: none;
+  padding: 0px;
+  margin: 0px;
+}
+#about-us h1, #about-us .h1 {
+  font-size: 3.5rem;
+  color: #020823;
+  padding: 3rem;
+  text-align: left;
+}
+#about-us .sect-head {
+  width: 100vw;
+  background-color: #EDFBFF;
+  margin: 0px;
+  position: relative;
+  top: -18vh;
+  border-bottom: solid 3px #20567A;
+}
+
+.about {
+  background-color: #EDFBFF;
   padding: 1.5rem 2rem;
   margin-bottom: 5rem;
-  width: 80%;
-  border-radius: 30px;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  -ms-border-radius: 30px;
-  -o-border-radius: 30px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  width: 100%;
+  border-radius: 0px;
+  border-left: solid 3px #20567A;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
   box-shadow: 0 5px 10px #212529;
 }
 .about p {
-  color: #D9E0E6;
+  color: #020823;
+  text-align: justify;
 }
 
 .second {
@@ -10298,6 +10317,11 @@ section {
 
 .third {
   clear: right;
+}
+
+#services {
+  background-color: #EDFBFF;
+  margin: 0px;
 }
 
 .servi {
