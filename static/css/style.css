@@ -10297,7 +10297,7 @@ section {
   margin-bottom: 5rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
-  width: 100%;
+  width: 80%;
   border-radius: 0px;
   border-left: solid 3px #20567A;
   -webkit-border-radius: 0px;
@@ -10321,63 +10321,90 @@ section {
 
 #services {
   background-color: #EDFBFF;
+}
+#services h1, #services .h1 {
+  font-size: 3.5rem;
+  color: #EDFBFF;
+  padding: 3rem;
+  text-align: left;
+}
+#services .sect-head {
+  width: 100vw;
+  background-color: #20567A;
   margin: 0px;
+  position: relative;
+  top: -18vh;
+  border-bottom: solid 3px #020823;
 }
 
 .servi {
   display: grid;
-  width: 80%;
-  height: 130vh;
-  grid-template-areas: "glass profiles profiles" "aluco aluco fabrication" "access interior fabrication";
-  grid-gap: 20px;
+  width: 90%;
+  height: 140vh;
+  grid-template-areas: "glass profiles fabrication" "aluco aluco fabrication" "access interior fabrication";
+  grid-gap: 30px;
 }
 
 .glass {
   grid-area: glass;
+  display: flex;
+  align-items: flex-end;
 }
 .glass .textish {
-  bottom: 62%;
   width: 25%;
+  border-bottom: 3px solid #20567A;
 }
 
 .profiles {
   grid-area: profiles;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: stretch;
 }
 .profiles .textish {
-  bottom: 62%;
-  width: 52.5%;
+  width: 25%;
+  border-bottom: 3px solid #20567A;
 }
 
 .alucobond {
   grid-area: aluco;
+  display: flex;
+  align-items: flex-end;
 }
 .alucobond .textish {
-  bottom: 31%;
   width: 52.5%;
+  border-bottom: 3px solid #20567A;
 }
 
 .accessories {
   grid-area: access;
+  display: flex;
+  align-items: flex-end;
 }
 .accessories .textish {
-  bottom: 0%;
   width: 25%;
+  border-bottom: 3px solid #20567A;
 }
 
 .interior-design {
   grid-area: interior;
+  display: flex;
+  align-items: flex-end;
 }
 .interior-design .textish {
-  bottom: 0%;
   width: 25%;
+  border-bottom: 3px solid #20567A;
 }
 
 .fabrication {
   grid-area: fabrication;
+  display: flex;
+  align-items: flex-end;
 }
 .fabrication .textish {
-  bottom: 0%;
   width: 25%;
+  border-bottom: 3px solid #20567A;
 }
 
 .service {

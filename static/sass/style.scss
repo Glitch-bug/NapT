@@ -259,66 +259,101 @@ section{
 //Services
 #services {
     background-color: $nav-blue;
-    margin: 0px;
+    
+    h1{
+        font-size: $spacer * 3.5;
+        color: $nav-blue;
+        padding: $spacer * 3;
+        text-align: left;
+    }
+
+    .sect-head {
+        width: 100vw;
+        background-color: $send-col;
+        margin: 0px;
+        position: relative;
+        top:-18vh;
+        border-bottom: solid 3px $slogan-blue;
+    }
 }
 
 
 .servi{
     display: grid;
-    width: 80%;
-    height: 130vh;
+    width: 90%;
+    height: 140vh;
     grid-template-areas:
-     "glass profiles profiles"
+     "glass profiles fabrication"
      "aluco aluco fabrication"
      "access interior fabrication";
-     grid-gap: 20px;
+     grid-gap: 30px;
 }
 
 .glass{
     grid-area: glass;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 62%;
+        // bottom: 10%;
         width: 25%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .profiles{
     grid-area: profiles;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: stretch;
     .textish{
-        bottom: 62%;
-        width: 52.5%;
+        // bottom: 0%;
+        width: 25%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .alucobond{
     grid-area: aluco;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 31%;
+        // bottom: 31%;
         width: 52.5%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .accessories{
     grid-area: access;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 0%;
+        // bottom: 0%;
         width: 25%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .interior-design{
     grid-area: interior;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 0%;
+        // bottom: 0%;
         width: 25%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .fabrication{
     grid-area: fabrication;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 0%;
+        // bottom: 0%;
         width: 25%;
+        border-bottom:3px solid $send-col;
     }
 } 
 
