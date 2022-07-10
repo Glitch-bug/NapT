@@ -78,3 +78,41 @@ sandwich panel
 6. Contact Us
 
 7. Location
+
+//CSS IDEAS
+-black and silver gradient transparent nav bar with white button links
+-switches to inverse with blac silver buttons and transparent blur nav
+if page scrolled 
+-can be undone by returning to original position
+
+Navbar 
+- Make reactive to portion of screen shown
+- Change to lighter more transparent color?
+	- Buttons change to former nav color
+
+
+Homepage
+- Need clearer crispier background pic**
+- background pic should show more of its darker portion**
+- div element transformed into clear silver rectangle/square
+- move div element around like ping pong ball.
+- Ask people about color of the send button
+
+About Us
+- containers should be vertical not horizontal
+- edges should be sharper
+- should have clear white beautiful icons with black ink art at top 
+of container
+- About us should be underlined with parallelogram (hint:online tutorial)
+
+Contact us
+- Split in two
+- Plain color background with form embedded on one side
+- beautiful image background on the other
+- transparent div filter cover should move from form to image background 
+onclick, then back again?
+
+Services
+- Pictures need to take up more space 
+- New background image perhaps one with less going on
+

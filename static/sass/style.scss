@@ -1,3 +1,4 @@
+
 @import "custom";
 
 // General
@@ -21,6 +22,7 @@ body{
 
 nav{
     background-color: $blue-background;
+    background-image: $black-silver-grad;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
@@ -93,13 +95,13 @@ nav{
         color: $slogan-p;
         margin-bottom: $spacer * 3;
     }
-    img{
-        border-radius: 20px;
-        -webkit-border-radius: 20px;
-        -moz-border-radius: 20px;
-        -ms-border-radius: 20px;
-        -o-border-radius: 20px;
-    }
+    // img{
+    //     border-radius: 20px;
+    //     -webkit-border-radius: 20px;
+    //     -moz-border-radius: 20px;
+    //     -ms-border-radius: 20px;
+    //     -o-border-radius: 20px;
+    // }
 
     input{
         height: 3rem;
@@ -147,6 +149,16 @@ nav{
     z-index: -100;
 }
 
+#glass-ping {
+    position:absolute;
+    top:50vh;
+    height: 300px;
+    width: 500px;
+    background-image: $black-blue-white-grad-alpha;
+    z-index: 5;
+    border-radius: 10px;
+}
+
 //Sections styling
 
 section{
@@ -189,21 +201,50 @@ section{
 }
 
 //About Us
+#about-us {
+    background-color: $slogan-blue;
+    background-image: none;
+    padding: 0px;
+    margin: 0px;
+
+
+    h1{
+        font-size: $spacer * 3.5;
+        color: $slogan-blue;
+        padding: $spacer * 3;
+        text-align: left;
+    }
+
+    .sect-head {
+        width: 100vw;
+        background-color: $nav-blue;
+        margin: 0px;
+        position: relative;
+        top:-18vh;
+        border-bottom: solid 3px $send-col;
+    }
+}
+
 
 .about{
-    background-color: $slogan-blue;
+    background-color: $nav-blue;
     padding: 1.5rem 2rem;
     margin-bottom: 5rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
     width: 80%;
-    border-radius: 30px;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    -ms-border-radius: 30px;
-    -o-border-radius: 30px;
+    border-radius: 0px;
+    border-left: solid 3px $send-col;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
     box-shadow: 0 5px 10px $dark;
 
     p{
-        color: $sect-color;
+        // color: $sect-color; Use for About
+        color: $slogan-blue;
+        text-align: justify;
     }
 }
 
@@ -216,63 +257,103 @@ section{
 }
 
 //Services
+#services {
+    background-color: $nav-blue;
+    
+    h1{
+        font-size: $spacer * 3.5;
+        color: $nav-blue;
+        padding: $spacer * 3;
+        text-align: left;
+    }
+
+    .sect-head {
+        width: 100vw;
+        background-color: $send-col;
+        margin: 0px;
+        position: relative;
+        top:-18vh;
+        border-bottom: solid 3px $slogan-blue;
+    }
+}
+
 
 .servi{
     display: grid;
-    width: 80%;
-    height: 130vh;
+    width: 90%;
+    height: 140vh;
     grid-template-areas:
-     "glass profiles profiles"
+     "glass profiles fabrication"
      "aluco aluco fabrication"
      "access interior fabrication";
-     grid-gap: 20px;
+     grid-gap: 30px;
 }
 
 .glass{
     grid-area: glass;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 62%;
+        // bottom: 10%;
         width: 25%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .profiles{
     grid-area: profiles;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: stretch;
     .textish{
-        bottom: 62%;
-        width: 52.5%;
+        // bottom: 0%;
+        width: 25%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .alucobond{
     grid-area: aluco;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 31%;
+        // bottom: 31%;
         width: 52.5%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .accessories{
     grid-area: access;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 0%;
+        // bottom: 0%;
         width: 25%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .interior-design{
     grid-area: interior;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 0%;
+        // bottom: 0%;
         width: 25%;
+        border-bottom:3px solid $send-col;
     }
 }
 
 .fabrication{
     grid-area: fabrication;
+    display: flex;
+    align-items:flex-end;
     .textish{
-        bottom: 0%;
+        // bottom: 0%;
         width: 25%;
+        border-bottom:3px solid $send-col;
     }
 } 
 
@@ -297,10 +378,58 @@ section{
 .service-back{
     position: absolute;
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     left: 0;
     z-index: -100;
     opacity: 52%;
+}
+
+//Contact Us
+#contact-us{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    z-index: -100;
+    padding:0px; 
+    
+
+    h1{
+        font-size: $spacer * 3.5;
+        color: $nav-blue;
+        padding: $spacer * 3;
+        text-align: left;
+    }
+
+    .sect-head {
+        width: 100vw;
+        background-color: $send-col;
+        margin: 0px;
+        position: relative;
+        top:-18vh;
+        border-bottom: solid 3px $slogan-blue;
+        margin: 0;
+    }
+
+    .bigbg {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        border: 3px solid black;
+    }
+
+    .leftbg{
+        background-color: red;
+        height:100%;
+        width:50%;
+    }
+
+    .rightbg{
+        background-color: green;
+        height:100%;
+        width:50%;
+    }
 }
 
 //Media queries
@@ -574,3 +703,5 @@ section{
 
 
 //Hope you have fun understanding my code
+
+// FUCK U!!! LOLOLOLOL
