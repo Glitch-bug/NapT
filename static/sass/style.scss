@@ -378,10 +378,58 @@ section{
 .service-back{
     position: absolute;
     width: 100%;
-    height: 200vh;
+    height: 100vh;
     left: 0;
     z-index: -100;
     opacity: 52%;
+}
+
+//Contact Us
+#contact-us{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    z-index: -100;
+    padding:0px; 
+    
+
+    h1{
+        font-size: $spacer * 3.5;
+        color: $nav-blue;
+        padding: $spacer * 3;
+        text-align: left;
+    }
+
+    .sect-head {
+        width: 100vw;
+        background-color: $send-col;
+        margin: 0px;
+        position: relative;
+        top:-18vh;
+        border-bottom: solid 3px $slogan-blue;
+        margin: 0;
+    }
+
+    .bigbg {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        border: 3px solid black;
+    }
+
+    .leftbg{
+        background-color: red;
+        height:100%;
+        width:50%;
+    }
+
+    .rightbg{
+        background-color: green;
+        height:100%;
+        width:50%;
+    }
 }
 
 //Media queries

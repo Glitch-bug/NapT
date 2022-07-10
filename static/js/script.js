@@ -1,5 +1,5 @@
 var reveal = () => {
-  let section = ["about-us", "services", "testimonies"]
+  let section = ["about-us", "services"]
   let nalink = document.querySelectorAll(".nav-item");
   let naan = document.querySelectorAll(".nav-item > a");
   let all_sections = document.getElementsByTagName("section");
