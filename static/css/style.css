@@ -10487,37 +10487,57 @@ section {
   justify-content: space-around;
 }
 #contact-us .rightbg {
-  background-color: #020823;
-  background-image: url(staticimages஬kground\f rosty.jpg);
+  background-color: #20567A;
+  background-image: url(david-unsplash.png);
   height: 100%;
   width: 50%;
   margin: 0px;
 }
 #contact-us .inputBx input {
   width: 100%;
-  background: transparent;
+  background-color: rgba(32, 86, 122, 0.1725490196);
   box-shadow: none;
   border: none;
   outline: none;
   padding: 10px 0px;
   font-size: 18px;
-  font-weight: 300;
-  color: #20567A;
-  border-right: solid 3px #20567A;
+  font-weight: 500;
+  color: white;
+  padding-left: 5px;
+  border-left: solid 3px #20567A;
   margin: 5px 0px;
 }
 #contact-us .inputBx textarea {
   width: 40vw;
   min-height: 150px;
-  background: transparent;
+  background-color: rgba(32, 86, 122, 0.1725490196);
   box-shadow: none;
   border: none;
   outline: none;
   font-size: 18px;
-  font-weight: 300;
-  color: #20567A;
-  border-right: solid 3px #20567A;
+  font-weight: 500;
+  color: white;
+  padding-left: 5px;
+  border-left: solid 3px #20567A;
   margin: 5px 0px;
+}
+#contact-us .circle {
+  border-radius: 100%;
+}
+#contact-us #small {
+  height: 2vw;
+  width: 2vw;
+  background-color: rgba(221, 51, 198, 0.7);
+  backdrop-filter: blur(5px);
+}
+#contact-us #big {
+  height: 12vw;
+  width: 12vw;
+  background-color: rgba(63, 11, 112, 0.7);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
+  position: absolute;
+  top: 8vw;
 }
 
 @media (max-width: 835px) and (min-width: 768px) {

@@ -446,8 +446,8 @@ section{
     }
 
     .rightbg{
-        background-color: $slogan-blue;
-        background-image: url(static\images\background\frosty.jpg);
+        background-color: $send-col;
+        background-image: url(david-unsplash.png);
         height:100%;
         width:50%;
         margin: 0px;
@@ -455,30 +455,54 @@ section{
 
     .inputBx input{
         width: 100%;
-        background: transparent;
+        background-color: $trans-send-col;
         box-shadow: none;
         border: none;
         outline: none;
         padding: 10px 0px;
         font-size: 18px;
-        font-weight: 300;
-        color: $send-col;
-        border-right:solid 3px $send-col;
+        font-weight: 500;
+        color: white;
+        padding-left: 5px;
+        border-left:solid 3px $send-col;
         margin: 5px 0px;
     } 
 
     .inputBx textarea{
         width: 40vw;
         min-height: 150px;
-        background: transparent;
+        background-color: $trans-send-col;
         box-shadow: none;
         border: none;
         outline: none;
         font-size: 18px;
-        font-weight: 300;
-        color: $send-col;
-        border-right:solid 3px $send-col;
+        font-weight: 500;
+        color: white;
+        padding-left: 5px;
+        border-left:solid 3px $send-col;
         margin: 5px 0px;
+    }
+
+    .circle{
+        border-radius: 100%;
+    }
+
+    #small{
+        height: 2vw;
+        width: 2vw;
+        background-color: rgba($color: #dd33c6, $alpha: 0.7);
+        backdrop-filter: blur(5px);
+    }
+
+    #big{
+        height: 12vw;
+        width: 12vw;
+        background-color: rgba($color: #3f0b70, $alpha: 0.7);
+        // filter: blur(5px);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(10px);
+        position: absolute;
+        top:8vw;
     }
 }
 
