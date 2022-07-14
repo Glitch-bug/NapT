@@ -391,24 +391,38 @@ section{
     height: 100vh;
     left: 0;
     z-index: -100;
-    padding:0px; 
+    padding:0px;
     
+    #biggerbg{
+        height: 100%;
+        width: 100%;
+        padding: 0px;
+    }
 
     h1{
         font-size: $spacer * 3.5;
         color: $nav-blue;
         padding: $spacer * 3;
         text-align: left;
+        margin: 0px;
+        margin-bottom: 0px;
+    }
+
+    .flex-column{
+        margin:0px;
+        padding:0px;
     }
 
     .sect-head {
         width: 100vw;
-        background-color: $send-col;
+        background-color:$slogan-blue ;
         margin: 0px;
-        position: relative;
-        top:-18vh;
-        border-bottom: solid 3px $slogan-blue;
-        margin: 0;
+        border-bottom: solid 3px $send-col;
+        margin: 0px;
+    }
+
+    #contact-head{
+        margin-bottom: 0px !important;
     }
 
     .bigbg {
@@ -416,19 +430,55 @@ section{
         flex-direction: row;
         width: 100%;
         height: 100%;
-        border: 3px solid black;
+        margin: 0px;
+        padding: 0px;
     }
 
     .leftbg{
-        background-color: red;
+        background-color: $nav-blue;
         height:100%;
         width:50%;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
     }
 
     .rightbg{
-        background-color: green;
+        background-color: $slogan-blue;
+        background-image: url(static\images\background\frosty.jpg);
         height:100%;
         width:50%;
+        margin: 0px;
+    }
+
+    .inputBx input{
+        width: 100%;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        padding: 10px 0px;
+        font-size: 18px;
+        font-weight: 300;
+        color: $send-col;
+        border-right:solid 3px $send-col;
+        margin: 5px 0px;
+    } 
+
+    .inputBx textarea{
+        width: 40vw;
+        min-height: 150px;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        font-weight: 300;
+        color: $send-col;
+        border-right:solid 3px $send-col;
+        margin: 5px 0px;
     }
 }
 
