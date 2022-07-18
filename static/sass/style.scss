@@ -436,6 +436,7 @@ section{
 
     .leftbg{
         background-color: $nav-blue;
+        box-sizing: border-box !important; 
         height:100%;
         width:50%;
         margin: 0px;
@@ -447,14 +448,17 @@ section{
 
     .rightbg{
         background-color: $send-col;
-        background-image: url(david-unsplash.png);
+        background-image: url(pexels-miguel-á-padriñán-255379.jpg);
+        background-position: center;
+        background-size:cover;
         height:100%;
         width:50%;
         margin: 0px;
     }
 
     .inputBx input{
-        width: 100%;
+        // box-sizing: border-box;
+        width: 40vw;
         background-color: $trans-send-col;
         box-shadow: none;
         border: none;
@@ -462,9 +466,9 @@ section{
         padding: 10px 0px;
         font-size: 18px;
         font-weight: 500;
-        color: white;
+        color: $send-col;
         padding-left: 5px;
-        border-left:solid 3px $send-col;
+        border-left:solid 5px $send-col;
         margin: 5px 0px;
     } 
 
@@ -477,9 +481,9 @@ section{
         outline: none;
         font-size: 18px;
         font-weight: 500;
-        color: white;
+        color: $send-col;
         padding-left: 5px;
-        border-left:solid 3px $send-col;
+        border-left:solid 5px $send-col;
         margin: 5px 0px;
     }
 
@@ -488,22 +492,50 @@ section{
     }
 
     #small{
-        height: 2vw;
-        width: 2vw;
+        height: 52px;
+        width: 52px;
         background-color: rgba($color: #dd33c6, $alpha: 0.7);
         backdrop-filter: blur(5px);
+        position: absolute;
+        top:0px;
+        left:0px;
+        // right: 0px;
     }
 
     #big{
-        height: 12vw;
-        width: 12vw;
-        background-color: rgba($color: #3f0b70, $alpha: 0.7);
+        height: 140px;
+        width: 140px;
+        background-color: rgba($color: #0b6d70, $alpha: 0.7);
         // filter: blur(5px);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(10px);
+        // backdrop-filter: blur(50px);
+        // -webkit-backdrop-filter: blur(100px);
+        // -moz-backdrop-filter:blur(100px);
+        // -ms-backdrop-filter:blur(100px);
+        // -o-backdrop-filter:blur(100px);
         position: absolute;
-        top:8vw;
+        // box-shadow: 0px 0px 4px 3px rgba($color: #592886, $alpha: 0.7);
+        top:0px;
+        right:0px;
+
     }
+
+    #medium{
+        height: 80px;
+        width: 80px;
+        background-color: rgba($color: #d37528, $alpha: 0.7);
+        // filter: blur(5px);
+        // backdrop-filter: blur(50px);
+        // -webkit-backdrop-filter: blur(100px);
+        // -moz-backdrop-filter:blur(100px);
+        // -ms-backdrop-filter:blur(100px);
+        // -o-backdrop-filter:blur(100px);
+        position: absolute;
+        // box-shadow: 0px 0px 4px 3px rgba($color: #592886, $alpha: 0.7);
+        top:0px;
+        left:0px;
+    }
+
+    
 }
 
 //Media queries
