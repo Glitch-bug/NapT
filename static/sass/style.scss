@@ -14,6 +14,11 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
 }
 
+.sect-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
 //Nav
 
 .glass-nav{
@@ -386,11 +391,9 @@ section{
 
 //Contact Us
 #contact-us{
-    position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    left: 0;
-    z-index: -100;
+    z-index: -10;
     padding:0px;
     
     #biggerbg{
@@ -522,7 +525,7 @@ section{
     #medium{
         height: 80px;
         width: 80px;
-        background-color: rgba($color: #d37528, $alpha: 0.7);
+        background-color: rgba($color: #efaf58, $alpha: 0.7);
         // filter: blur(5px);
         // backdrop-filter: blur(50px);
         // -webkit-backdrop-filter: blur(100px);
@@ -538,6 +541,70 @@ section{
     
 }
 
+#footer {
+    background: #162c3b;
+    padding: 0px 0px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: $send-col;
+    justify-content: space-between;
+    align-items:center;
+    
+    .left {
+        flex-direction: column;
+        text-align: justify;
+        color:red;
+        margin:0px;
+    }
+    .right {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .center{
+        align-self: flex-start;
+        padding-top:5px;
+    }
+    p{
+        color:white;
+        margin: 0px;
+        padding: 0px;
+        border-bottom: 2px solid $nav-blue;
+    }
+
+    p a {
+        text-decoration: none;
+        color: grey;
+    }
+
+    a:hover {
+        color: white;
+    }
+    
+    ul{
+        margin: 0px;
+    }
+
+    ul li {
+        list-style: none;
+    }
+
+    ul li a {
+        text-decoration: none;
+        display: inline-block;
+        color:grey;
+        margin: 0px 10px;
+        
+    }
+
+    ul li a img {
+        filter: invert(1);
+        max-width: 20px;
+    }
+}
 //Media queries
 
 @media (max-width:835px) and (min-width:768px){
