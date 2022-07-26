@@ -10114,6 +10114,11 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.sect-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .glass-nav {
   display: none;
 }
@@ -10174,14 +10179,51 @@ main {
   overflow: hidden;
   position: relative;
 }
+main .main-wrapper {
+  height: inherit;
+  width: 50%;
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+  padding-right: 0px;
+}
+main .intro-comp {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: min-content;
+  width: min-content;
+  position: absolute;
+  right: 0px;
+}
+main .hig {
+  text-align: center;
+}
 main h1, main .h1 {
   font-size: 3.5rem;
   color: #020823;
-  margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 0px;
+  background-color: #EDFBFF;
+  border-radius: 5px 5px 0px 0px;
+  padding: 50px 20px;
+  height: 100%;
+  width: 40vw;
 }
 main p {
-  color: rgba(2, 8, 35, 0.78);
-  margin-bottom: 3rem;
+  color: #EDFBFF;
+  line-height: 2;
+  background-color: #020823;
+  margin-bottom: 0px;
+  border-radius: 0px 0px 5px 5px;
+  width: 40vw;
+  height: min-content;
+  padding: 50px 20px;
+}
+main .slogan-text {
+  justify-self: flex-start;
 }
 main input {
   height: 3rem;
@@ -10298,12 +10340,12 @@ section {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   width: 80%;
-  border-radius: 0px;
-  border-left: solid 3px #20567A;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
+  border-left: solid 6px #20567A;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   box-shadow: 0 5px 10px #212529;
 }
 .about p {
@@ -10409,6 +10451,7 @@ section {
 
 .service {
   overflow: hidden;
+  border-radius: 5px;
 }
 .service img {
   min-height: 100%;
@@ -10434,11 +10477,9 @@ section {
 }
 
 #contact-us {
-  position: absolute;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  left: 0;
-  z-index: -100;
+  z-index: -10;
   padding: 0px;
 }
 #contact-us #biggerbg {
@@ -10509,6 +10550,7 @@ section {
   padding-left: 5px;
   border-left: solid 5px #20567A;
   margin: 5px 0px;
+  border-radius: 5px;
 }
 #contact-us .inputBx textarea {
   width: 40vw;
@@ -10523,6 +10565,7 @@ section {
   padding-left: 5px;
   border-left: solid 5px #20567A;
   margin: 5px 0px;
+  border-radius: 5px;
 }
 #contact-us .circle {
   border-radius: 100%;
@@ -10547,10 +10590,66 @@ section {
 #contact-us #medium {
   height: 80px;
   width: 80px;
-  background-color: rgba(211, 117, 40, 0.7);
+  background-color: rgba(239, 175, 88, 0.7);
   position: absolute;
   top: 0px;
   left: 0px;
+}
+
+#footer {
+  background: #162c3b;
+  padding: 0px 0px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  background-color: #20567A;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer .left {
+  flex-direction: column;
+  text-align: justify;
+  color: red;
+  margin: 0px;
+}
+#footer .right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#footer .center {
+  align-self: flex-start;
+  padding-top: 5px;
+}
+#footer p {
+  color: white;
+  margin: 0px;
+  padding: 0px;
+  border-bottom: 2px solid #EDFBFF;
+}
+#footer p a {
+  text-decoration: none;
+  color: grey;
+}
+#footer a:hover {
+  color: white;
+}
+#footer ul {
+  margin: 0px;
+}
+#footer ul li {
+  list-style: none;
+}
+#footer ul li a {
+  text-decoration: none;
+  display: inline-block;
+  color: grey;
+  margin: 0px 10px;
+}
+#footer ul li a img {
+  filter: invert(1);
+  max-width: 20px;
 }
 
 @media (max-width: 835px) and (min-width: 768px) {
