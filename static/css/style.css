@@ -10210,7 +10210,7 @@ main h1, main .h1 {
   border-radius: 5px 5px 0px 0px;
   padding: 50px 20px;
   height: 100%;
-  width: 35vw;
+  width: 40vw;
 }
 main p {
   color: #EDFBFF;
@@ -10218,7 +10218,7 @@ main p {
   background-color: #020823;
   margin-bottom: 0px;
   border-radius: 0px 0px 5px 5px;
-  width: 35vw;
+  width: 40vw;
   height: min-content;
   padding: 50px 20px;
 }
@@ -10340,7 +10340,7 @@ section {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   width: 80%;
-  border-left: solid 3px #20567A;
+  border-left: solid 6px #20567A;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
