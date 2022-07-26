@@ -86,27 +86,65 @@ nav{
 
 //Home
 
-    main{
+main{
     height: 100vh;
     margin-bottom: 0 !important;
     overflow: hidden;
     position: relative;
+
+    .main-wrapper{
+        height:inherit;
+        width: 50%;
+        margin: 0px;
+        position:absolute;
+        left:0px;
+        padding-right: 0px;
+    }
+
+    .intro-comp {
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        height: min-content;
+        width:min-content;
+        position:absolute;
+        right:0px;
+    }
+
+    .hig {
+        text-align:center;
+    }
+
     h1{
         font-size: $spacer * 3.5;
         color: $slogan-blue;
-        margin-bottom: $spacer * 3;
+        text-align:center;
+        margin-bottom:0px;
+        background-color: $nav-blue;
+        // border-left: 50px solid $slogan-blue;
+        border-radius: 5px 5px 0px 0px;
+        padding:50px 20px;
+        height:100%;
+        width:35vw;
     }
+
     p{
-        color: $slogan-p;
-        margin-bottom: $spacer * 3;
+        color: $nav-blue;
+        line-height:2;
+        background-color: $slogan-blue;
+        margin-bottom: 0px;
+        border-radius: 0px 0px 5px 5px;
+        // border-left: 125px solid $nav-blue;
+        width:35vw;
+        height: min-content;
+        padding:50px 20px;
     }
-    // img{
-    //     border-radius: 20px;
-    //     -webkit-border-radius: 20px;
-    //     -moz-border-radius: 20px;
-    //     -ms-border-radius: 20px;
-    //     -o-border-radius: 20px;
-    // }
+
+    .slogan-text{
+        justify-self: flex-start;
+    }
 
     input{
         height: 3rem;
@@ -238,12 +276,12 @@ section{
     margin-left: 1.5rem;
     margin-right: 1.5rem;
     width: 80%;
-    border-radius: 0px;
     border-left: solid 3px $send-col;
-    -webkit-border-radius: 0px;
-    -moz-border-radius: 0px;
-    -ms-border-radius: 0px;
-    -o-border-radius: 0px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     box-shadow: 0 5px 10px $dark;
 
     p{
@@ -364,6 +402,7 @@ section{
 
 .service{
     overflow: hidden;
+    border-radius:5px;
     img{
         min-height: 100%;
         min-width: 100%;
@@ -473,6 +512,7 @@ section{
         padding-left: 5px;
         border-left:solid 5px $send-col;
         margin: 5px 0px;
+        border-radius: 5px;
     } 
 
     .inputBx textarea{
@@ -488,6 +528,7 @@ section{
         padding-left: 5px;
         border-left:solid 5px $send-col;
         margin: 5px 0px;
+        border-radius: 5px;
     }
 
     .circle{
@@ -541,6 +582,7 @@ section{
     
 }
 
+//Footer
 #footer {
     background: #162c3b;
     padding: 0px 0px;
@@ -583,7 +625,7 @@ section{
     a:hover {
         color: white;
     }
-    
+
     ul{
         margin: 0px;
     }
@@ -877,4 +919,4 @@ section{
 
 //Hope you have fun understanding my code
 
-// FUCK U!!! LOLOLOLOL
+//ヽ(ｏ`皿′ｏ)ﾉ

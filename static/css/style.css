@@ -10179,14 +10179,51 @@ main {
   overflow: hidden;
   position: relative;
 }
+main .main-wrapper {
+  height: inherit;
+  width: 50%;
+  margin: 0px;
+  position: absolute;
+  left: 0px;
+  padding-right: 0px;
+}
+main .intro-comp {
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  height: min-content;
+  width: min-content;
+  position: absolute;
+  right: 0px;
+}
+main .hig {
+  text-align: center;
+}
 main h1, main .h1 {
   font-size: 3.5rem;
   color: #020823;
-  margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 0px;
+  background-color: #EDFBFF;
+  border-radius: 5px 5px 0px 0px;
+  padding: 50px 20px;
+  height: 100%;
+  width: 35vw;
 }
 main p {
-  color: rgba(2, 8, 35, 0.78);
-  margin-bottom: 3rem;
+  color: #EDFBFF;
+  line-height: 2;
+  background-color: #020823;
+  margin-bottom: 0px;
+  border-radius: 0px 0px 5px 5px;
+  width: 35vw;
+  height: min-content;
+  padding: 50px 20px;
+}
+main .slogan-text {
+  justify-self: flex-start;
 }
 main input {
   height: 3rem;
@@ -10303,12 +10340,12 @@ section {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
   width: 80%;
-  border-radius: 0px;
   border-left: solid 3px #20567A;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
   box-shadow: 0 5px 10px #212529;
 }
 .about p {
@@ -10414,6 +10451,7 @@ section {
 
 .service {
   overflow: hidden;
+  border-radius: 5px;
 }
 .service img {
   min-height: 100%;
@@ -10512,6 +10550,7 @@ section {
   padding-left: 5px;
   border-left: solid 5px #20567A;
   margin: 5px 0px;
+  border-radius: 5px;
 }
 #contact-us .inputBx textarea {
   width: 40vw;
@@ -10526,6 +10565,7 @@ section {
   padding-left: 5px;
   border-left: solid 5px #20567A;
   margin: 5px 0px;
+  border-radius: 5px;
 }
 #contact-us .circle {
   border-radius: 100%;
