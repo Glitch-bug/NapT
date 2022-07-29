@@ -32,6 +32,53 @@ var reveal = () => {
 }
 
 
+
+
+  
+
+
+var fader = function(){
+  var nav = document.querySelector('.navbar');
+  var header = document.querySelector('#contact-head');
+  var nav_botom = nav.getBoundingClientRect().bottom;
+  var header_top = header.getBoundingClientRect().top;
+  var nav_opa = parseInt(window.getComputedStyle(nav).opacity);
+  var nav_height = parseInt(window.getComputedStyle(nav).height);
+  var nav_items = document.querySelectorAll('.navbar *')
+  if (nav_botom >= header_top && nav_opa == 1) {
+    nav.style.opacity = 0;
+    // var nubs = 0;
+    // var fades = function(){
+    //   nubs += 1;
+    //   var opacity = getComputedStyle(nav).opacity;
+    //   nav.style.opacity = opacity - 1/15
+    //   if (nubs == 15) {
+    //     nav.style.opacity = 0;
+    //     clearInterval(fpsfade);
+    //   }
+    // }
+    
+    // const fpsfade = setInterval(fades, 100);
+  }else if (nav_botom <= header_top && nav_opa === 0){
+    nav.style.opacity = 1;
+    // var nubs = 0;
+    // var appears = function(){
+    //   nubs += 1;
+    //   var opacity = getComputedStyle(nav).opacity;
+    //   nav.style.opacity = opacity + 1/15
+    //   if (nubs == 16) {
+    //     nav.style.opacity = 1;
+    //     clearInterval(fpsappear);
+    //   }
+    // }
+    
+    // const fpsappear = setInterval(appears, 200);
+  }
+}
+
+
+
+
 var divWindow = document.querySelector("#glass-ping");
 
 
@@ -43,6 +90,7 @@ var background_height = window.getComputedStyle(document.querySelector('.home-ba
 var background_width = window.getComputedStyle(document.querySelector('.home-backk')).width.slice(0,-2);
 document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('scroll', reveal);
+  window.addEventListener('scroll', fader);
   const fps = setInterval(ping_pong, 1000/60);
 
   var images = document.querySelectorAll(".service")
