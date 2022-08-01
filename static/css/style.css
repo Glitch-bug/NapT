@@ -10200,6 +10200,7 @@ main .intro-comp {
 }
 main .hig {
   text-align: center;
+  width: 40vw;
 }
 main h1, main .h1 {
   font-size: 3.5rem;
@@ -10210,7 +10211,6 @@ main h1, main .h1 {
   border-radius: 5px 5px 0px 0px;
   padding: 50px 20px;
   height: 100%;
-  width: 40vw;
 }
 main p {
   color: #EDFBFF;
@@ -10218,7 +10218,6 @@ main p {
   background-color: #020823;
   margin-bottom: 0px;
   border-radius: 0px 0px 5px 5px;
-  width: 40vw;
   height: min-content;
   padding: 50px 20px;
 }
@@ -10701,8 +10700,11 @@ section {
   .main-nav ul li a {
     color: #EDFBFF;
   }
+  main .main-wrapper {
+    width: 100%;
+  }
   main .intro-comp {
-    width: 50% !important;
+    width: 100% !important;
     position: relative;
     top: 1.5rem;
     right: 1rem;
@@ -10736,6 +10738,9 @@ section {
   body {
     background-color: #EFFFFF;
   }
+  body h1, body .h1 {
+    font-size: 2rem;
+  }
   .glass-nav {
     display: flex;
     flex-direction: column;
@@ -10767,35 +10772,30 @@ section {
   }
   main {
     background-color: #EFFFFF;
-    height: max-content;
+    height: 100vh;
     z-index: -100;
   }
   main .glass-img {
     display: none !important;
   }
+  main .main-wrapper {
+    width: 100%;
+  }
   main .intro-comp {
     width: 100% !important;
-    margin: 5rem 0 2rem 0;
+    margin: 0rem 0 8rem 0;
+    align-items: center;
+    justify-self: center;
+  }
+  main .intro-comp .hig {
+    width: 80vw;
   }
   main .intro-comp h1, main .intro-comp .h1 {
-    display: none;
+    align-self: center;
   }
   main .intro-comp p {
     text-align: center;
     font-weight: 300;
-    width: 80%;
-    margin: 0 auto;
-    line-height: 2.5;
-  }
-  main .intro-comp form {
-    margin: 3rem 0 1rem 0;
-  }
-  main .intro-comp form input {
-    width: 85% !important;
-  }
-  main .intro-comp form button {
-    left: 75%;
-    padding: 0 1rem !important;
   }
   .about-back, .service-back {
     display: none;
