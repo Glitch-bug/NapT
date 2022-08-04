@@ -10801,7 +10801,7 @@ section {
     display: none;
   }
   .about {
-    background-color: rgba(186, 198, 209, 0.1725490196);
+    background-color: #EDFBFF;
     width: 100%;
     z-index: 100;
   }
@@ -10873,6 +10873,28 @@ section {
   .service .textish p {
     color: black;
     font-size: 1.5rem;
+  }
+  #contact-us {
+    height: 205vh;
+  }
+  #contact-us .bigbg {
+    flex-direction: column;
+  }
+  #contact-us .leftbg {
+    height: 80vh;
+    width: 100vw;
+  }
+  #contact-us .rightbg {
+    height: 100vh;
+    width: 100vw;
+  }
+  #contact-us .inputBx input {
+    margin: 5px 10px;
+    width: 80vw;
+  }
+  #contact-us .inputBx textarea {
+    margin: 5px 10px;
+    width: 80vw;
   }
 }
 
