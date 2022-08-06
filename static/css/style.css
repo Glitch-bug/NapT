@@ -10808,59 +10808,77 @@ section {
   .about p {
     color: #1A0634;
   }
+  .servi {
+    display: grid;
+    width: 100%;
+    height: 1030px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
   .glass {
-    grid-area: glass;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .glass .textish {
     bottom: 80.5%;
     width: 80%;
   }
   .profiles {
-    grid-area: profiles;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
   .profiles .textish {
     bottom: 64%;
     width: 80%;
   }
   .alucobond {
-    grid-area: aluco;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
   .alucobond .textish {
     bottom: 48%;
     width: 80%;
   }
   .accessories {
-    grid-area: access;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
   .accessories .textish {
     bottom: 32%;
     width: 80%;
   }
   .interior-design {
-    grid-area: interior;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
   }
   .interior-design .textish {
     bottom: 15.5%;
     width: 80%;
   }
   .fabrication {
-    margin-bottom: 2rem;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 5;
   }
   .fabrication .textish {
     position: relative;
     bottom: -0.5%;
     z-index: 100;
     width: 80%;
-  }
-  .servi {
-    display: grid;
-    width: 80%;
-    height: max-content;
-    grid-template-areas: "glass" "profiles" "aluco" "access" "interior" "fabrication";
-    grid-gap: 50px;
-  }
-  .service {
-    height: 300px;
   }
   .service img {
     min-height: 100%;
