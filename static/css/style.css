@@ -10814,7 +10814,7 @@ section {
     height: 1030px;
     grid-template-columns: 50% 50%;
     grid-template-rows: 250px 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 6px;
     margin: auto;
     margin-bottom: 15px;
   }
@@ -10823,9 +10823,10 @@ section {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: flex;
+    align-items: flex-end;
   }
   .glass .textish {
-    bottom: 80.5%;
     width: 80%;
   }
   .profiles {
@@ -10833,9 +10834,10 @@ section {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    display: flex;
+    align-items: flex-end;
   }
   .profiles .textish {
-    bottom: 64%;
     width: 80%;
   }
   .alucobond {
@@ -10843,9 +10845,10 @@ section {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    display: flex;
+    align-items: flex-end;
   }
   .alucobond .textish {
-    bottom: 48%;
     width: 80%;
   }
   .accessories {
@@ -10853,9 +10856,10 @@ section {
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 4;
+    display: flex;
+    align-items: flex-end;
   }
   .accessories .textish {
-    bottom: 32%;
     width: 80%;
   }
   .interior-design {
@@ -10863,9 +10867,10 @@ section {
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 5;
+    display: flex;
+    align-items: flex-end;
   }
   .interior-design .textish {
-    bottom: 15.5%;
     width: 80%;
   }
   .fabrication {
@@ -10873,10 +10878,11 @@ section {
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 5;
+    display: flex;
+    align-items: flex-end;
   }
   .fabrication .textish {
     position: relative;
-    bottom: -0.5%;
     z-index: 100;
     width: 80%;
   }
