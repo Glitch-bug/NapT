@@ -10920,6 +10920,15 @@ section {
     margin: 5px 10px;
     width: 80vw;
   }
+  #footer {
+    flex-direction: column;
+  }
+  #footer .center {
+    align-self: center;
+  }
+  #footer .left {
+    order: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

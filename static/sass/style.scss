@@ -972,6 +972,20 @@ section{
             width: 80vw;
         }
     }
+
+    #footer{
+        flex-direction: column;
+
+        .center{
+            align-self: center;
+        }
+
+        .left{
+            order:1;
+        }
+    }
+
+
 }
 
 
