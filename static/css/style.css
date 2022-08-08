@@ -10802,11 +10802,17 @@ section {
   }
   .about {
     background-color: #EDFBFF;
-    width: 100%;
+    width: 80%;
     z-index: 100;
   }
   .about p {
     color: #1A0634;
+  }
+  .about .second {
+    float: none;
+  }
+  .about .third {
+    clear: none;
   }
   .servi {
     display: grid;
