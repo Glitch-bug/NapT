@@ -10478,7 +10478,6 @@ section {
 #contact-us {
   width: 100vw;
   height: 100vh;
-  z-index: -10;
   padding: 0px;
 }
 #contact-us #biggerbg {
