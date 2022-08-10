@@ -409,6 +409,7 @@ section{
     .textish{
         position: absolute;
         background-color: #0C2337;
+        font-family: 'Oleo Script Swash Caps', cursive;
         p{
             color: white;
             position: relative;
@@ -505,7 +506,7 @@ section{
         padding: 10px 0px;
         font-size: 18px;
         font-weight: 500;
-        color: $send-col;
+        color: $input-font;
         padding-left: 5px;
         border-left:solid 5px $send-col;
         margin: 5px 0px;
@@ -521,11 +522,15 @@ section{
         outline: none;
         font-size: 18px;
         font-weight: 500;
-        color: $send-col;
+        color: $input-font;
         padding-left: 5px;
         border-left:solid 5px $send-col;
         margin: 5px 0px;
         border-radius: 5px;
+    }
+
+    .inputBx input[type="submit"]{
+        border-right:solid 5px $send-col;
     }
 
     .circle{
@@ -540,21 +545,13 @@ section{
         position: absolute;
         top:0px;
         left:0px;
-        // right: 0px;
     }
 
     #big{
         height: 140px;
         width: 140px;
         background-color: rgba($color: #0b6d70, $alpha: 0.7);
-        // filter: blur(5px);
-        // backdrop-filter: blur(50px);
-        // -webkit-backdrop-filter: blur(100px);
-        // -moz-backdrop-filter:blur(100px);
-        // -ms-backdrop-filter:blur(100px);
-        // -o-backdrop-filter:blur(100px);
         position: absolute;
-        // box-shadow: 0px 0px 4px 3px rgba($color: #592886, $alpha: 0.7);
         top:0px;
         right:0px;
 
@@ -564,14 +561,7 @@ section{
         height: 80px;
         width: 80px;
         background-color: rgba($color: #efaf58, $alpha: 0.7);
-        // filter: blur(5px);
-        // backdrop-filter: blur(50px);
-        // -webkit-backdrop-filter: blur(100px);
-        // -moz-backdrop-filter:blur(100px);
-        // -ms-backdrop-filter:blur(100px);
-        // -o-backdrop-filter:blur(100px);
         position: absolute;
-        // box-shadow: 0px 0px 4px 3px rgba($color: #592886, $alpha: 0.7);
         top:0px;
         left:0px;
     }
@@ -851,11 +841,11 @@ section{
 
     .servi{
         display: grid;
-        width: 100%;
+        width: 96%;
         height: 1030px;
-        grid-template-columns:50% 50%;
+        grid-template-columns:48% 48%;
         grid-template-rows: 250px 1fr 1fr 1fr;
-        grid-gap: 6px;
+        grid-gap: 10px;
         margin:auto;
         margin-bottom:15px;
     }
@@ -944,11 +934,13 @@ section{
         }
     
         .textish{
-            background-color:transparent;
             position: absolute;
+            background-color: #0C2337;
+            font-family: 'Oleo Script Swash Caps', cursive;
             p{
-                color: black;
-                font-size: 1.5rem;
+                color: white;
+                position: relative;
+                top: 5px;
             }
         }
     }
@@ -972,11 +964,13 @@ section{
 
         .inputBx input{
             margin: 5px 10px;
+            color: $input-font;
             width: 80vw;
         }
 
         .inputBx textarea{
             margin: 5px 10px;
+            color: $input-font;
             width: 80vw;
         }
     }
