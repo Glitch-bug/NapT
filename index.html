@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, target-densityDpi=device-dpi" />
   <title>Napt Enterpises</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet"> 
   <link rel="shortcut icon" href="static/images/istockphoto-1295812321-612x612.jpg" type="image/x-icon">
   <link rel="stylesheet" href="static/css/style.css">
 </head>
@@ -88,13 +92,13 @@
           <div class="profiles service">
             <img src="static/images/photo_2022-04-22_17-45-34.jpg" alt="Glass-Service" class="card-img-top">
             <div class="textish">
-              <p class="">Profiles</p>
+              <p class="">Framless hinge door</p>
             </div>
           </div>
           <div class="alucobond service">
             <img src="static/images/WhatsApp Image 2022-04-01 at 7.20.17 PM.jpeg" alt="Glass-Service" class="card-img-top">
             <div class="textish">
-              <p class="">Alucobond</p>
+              <p class="">Aluminum profiles fabricated</p>
             </div>
           </div>
           <div class="accessories service">
@@ -106,7 +110,7 @@
           <div class="interior-design service">
             <img src="static/images/photo_2022-04-22_17-45-34.jpg" alt="Glass-Service" class="card-img-top">
             <div class="textish">
-              <p class="">Interior Decor</p>
+              <p class="">Bath top</p>
             </div>
           </div>
           <div class="fabrication service">
@@ -182,7 +186,10 @@
   </div>
   
   <!-- Footer -->
-  
+  <script>
+    var viewport = document.querySelector("meta[name=viewport]");
+        viewport.setAttribute('content', viewport.content + ", height=" + window.innerHeight);
+  </script>
   <script src="./static/js/script.js"></script>
   <script src="./static/bootstrap-5.1.3/dist/js/bootstrap.js"></script>
 </body>
