@@ -38,41 +38,19 @@ var reveal = () => {
 
 
 var fader = function(){
-  var nav = document.querySelector('.navbar');
-  var header = document.querySelector('#contact-head');
-  var nav_botom = nav.getBoundingClientRect().bottom;
-  var header_top = header.getBoundingClientRect().top;
-  var nav_opa = parseInt(window.getComputedStyle(nav).opacity);
-  var nav_height = parseInt(window.getComputedStyle(nav).height);
-  var nav_items = document.querySelectorAll('.navbar *')
-  if (nav_botom >= header_top && nav_opa == 1) {
-    nav.style.opacity = 0;
-    // var nubs = 0;
-    // var fades = function(){
-    //   nubs += 1;
-    //   var opacity = getComputedStyle(nav).opacity;
-    //   nav.style.opacity = opacity - 1/15
-    //   if (nubs == 15) {
-    //     nav.style.opacity = 0;
-    //     clearInterval(fpsfade);
-    //   }
-    // }
-    
-    // const fpsfade = setInterval(fades, 100);
-  }else if (nav_botom <= header_top && nav_opa === 0){
-    nav.style.opacity = 1;
-    // var nubs = 0;
-    // var appears = function(){
-    //   nubs += 1;
-    //   var opacity = getComputedStyle(nav).opacity;
-    //   nav.style.opacity = opacity + 1/15
-    //   if (nubs == 16) {
-    //     nav.style.opacity = 1;
-    //     clearInterval(fpsappear);
-    //   }
-    // }
-    
-    // const fpsappear = setInterval(appears, 200);
+  if(window.innerWidth >= 768){
+    var nav = document.querySelector('.navbar');
+    var header = document.querySelector('#contact-head');
+    var nav_botom = nav.getBoundingClientRect().bottom;
+    var header_top = header.getBoundingClientRect().top;
+    var nav_opa = parseInt(window.getComputedStyle(nav).opacity);
+    var nav_height = parseInt(window.getComputedStyle(nav).height);
+    var nav_items = document.querySelectorAll('.navbar *')
+    if (nav_botom >= header_top && nav_opa == 1) {
+      nav.style.opacity = 0;
+    }else if (nav_botom <= header_top && nav_opa === 0){
+      nav.style.opacity = 1;
+    }
   }
 }
 
@@ -168,24 +146,12 @@ for(let i = 0; i< ping_pongs.length; i++){
 }
 
 var ping_pongs = function(){
-  // var ping_pongs = document.querySelectorAll(".ping-pongs");
-  // var space = document.querySelector('#contact-us');
-  // var space_width = getComputedStyle(space).width.slice(0,-2);
-  // var space_heigth  = getComputedStyle(space).height.slice(0,-2);
   for(let i = 0; i< ping_movers.length; i++){
 
     let pong = ping_movers[i];
-    
-    // let pong_top = getComputedStyle(pong).top.slice(0,-2);
-    // let pong_left = getComputedStyle(pong).left.slice(0,-2);
-    // let pong_right = getComputedStyle(pong).right.slice(0,-2);
-    // let pong_bottom = getComputedStyle(pong).bottom.slice(0,-2);
+
     pong.update();
-    pong.move();
-    // console.log(pong.top)
-    //decides which way the pong should move
-    //moves the pong in that direction
-  
+    pong.move();  
 
   }
 }
