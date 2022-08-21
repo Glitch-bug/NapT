@@ -330,7 +330,7 @@ section{
      grid-gap: 30px;
 }
 
-.glass{
+.sliding-window{
     grid-area: glass;
     display: flex;
     align-items:flex-end;
@@ -341,7 +341,7 @@ section{
     }
 }
 
-.profiles{
+.frameless-hinge-door{
     grid-area: profiles;
     display: flex;
     flex-direction: column;
@@ -354,7 +354,7 @@ section{
     }
 }
 
-.alucobond{
+.aluminium-profiles-fabricated{
     grid-area: aluco;
     display: flex;
     align-items:flex-end;
@@ -365,7 +365,7 @@ section{
     }
 }
 
-.accessories{
+.aluminium-profiles{
     grid-area: access;
     display: flex;
     align-items:flex-end;
@@ -376,7 +376,7 @@ section{
     }
 }
 
-.interior-design{
+.frameless-rotating-door{
     grid-area: interior;
     display: flex;
     align-items:flex-end;
@@ -499,6 +499,7 @@ section{
     .inputBx input{
         // box-sizing: border-box;
         width: 40vw;
+        font:inherit;
         background-color: $trans-send-col;
         box-shadow: none;
         border: none;
@@ -515,6 +516,7 @@ section{
 
     .inputBx textarea{
         width: 40vw;
+        font:inherit;
         min-height: 150px;
         background-color: $trans-send-col;
         box-shadow: none;
@@ -522,7 +524,7 @@ section{
         outline: none;
         font-size: 18px;
         font-weight: 500;
-        color: $input-font;
+        color: $input-font !important;
         padding-left: 5px;
         border-left:solid 5px $send-col;
         margin: 5px 0px;
@@ -530,6 +532,9 @@ section{
     }
 
     .inputBx input[type="submit"]{
+        width: 30vw;
+        background-color:$send-col;
+        color:$nav-blue;
         border-right:solid 5px $send-col;
     }
 
@@ -850,7 +855,7 @@ section{
         margin-bottom:15px;
     }
 
-    .glass{
+    .sliding-window{
         grid-column-start: 1;
         grid-column-end:2;
         grid-row-start:1;
@@ -862,7 +867,7 @@ section{
         }
     }
     
-    .profiles{
+    .frameless-hinge-door{
         grid-column-start: 2;
         grid-column-end:3;
         grid-row-start:1;
@@ -874,7 +879,7 @@ section{
         }
     }
     
-    .alucobond{
+    .aluminium-profiles-fabricated{
         grid-column-start: 1;
         grid-column-end:3;
         grid-row-start:2;
@@ -886,7 +891,7 @@ section{
         }
     }
     
-    .accessories{
+    .aluminium-profiles{
         grid-column-start: 1;
         grid-column-end:2;
         grid-row-start:3;
@@ -898,7 +903,7 @@ section{
         }
     }
     
-    .interior-design{
+    .frameless-rotating-door{
         grid-column-start: 1;
         grid-column-end:2;
         grid-row-start:4;
