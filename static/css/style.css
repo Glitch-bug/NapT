@@ -10114,6 +10114,21 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.contentBox {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: #FFFFFF;
+}
+
 .sect-wrapper {
   display: flex;
   flex-direction: column;
