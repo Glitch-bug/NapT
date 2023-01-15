@@ -2,4 +2,4 @@
 Small scale website
 
 
-Live site: https://jemi-code.github.io/Napt/
+Live site at: https://nap-tenterprise.com/
