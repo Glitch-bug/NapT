@@ -10127,6 +10127,21 @@ body {
   width: 600px;
   height: 400px;
   background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+}
+.contentBox .imgBx {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contentBox .imgBx img {
+  position: relative;
+  max-width: 250px;
 }
 
 .sect-wrapper {
