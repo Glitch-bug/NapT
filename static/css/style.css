@@ -10120,6 +10120,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 4;
+  display: none;
 }
 
 .contentBox {
@@ -10189,6 +10190,42 @@ body {
   border-radius: 10px;
 }
 
+.close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background: #f3f3f3;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 6;
+  text-align: center;
+}
+.close p {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 767px) {
+  .content {
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+  }
+  .content .imgBx {
+    height: 200px;
+    transform: translateY(-50px);
+  }
+  .content .contentBox .content {
+    height: auto;
+    text-align: center;
+    padding: 20px;
+  }
+}
 .sect-wrapper {
   display: flex;
   flex-direction: column;
