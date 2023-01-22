@@ -70,7 +70,11 @@ document.addEventListener("DOMContentLoaded", function() {
   window.addEventListener('scroll', reveal);
   window.addEventListener('scroll', fader);
   const fps = setInterval(ping_pong, 1000/60);
+  const adjust = setInterval()
 
+});
+
+adjust_bottom_border = function(){
   var images = document.querySelectorAll(".service")
 
   for (let i =0; i< images.length; i++){
@@ -82,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var width = getComputedStyle(document.querySelector(`${indefication}`)).width;
     document.querySelector(`${indefication} > .textish`).style.width = width;
   }
-});
+}
 
 var space = document.querySelector('#contact-us');
 var space_width = parseInt(window.getComputedStyle(space).width.slice(0,-2));
@@ -138,9 +142,9 @@ Mover.prototype.move = function(){
 }
 var ping_movers = [];
 
-var ping_pongs = document.querySelectorAll(".ping-pongs");
+var ping_pangs = document.querySelectorAll(".ping-pongs");
 for(let i = 0; i< ping_pongs.length; i++){
-  var mover = new Mover(ping_pongs[i]);
+  var mover = new Mover(ping_pangs[i]);
   mover.update();
   ping_movers.push(mover);
 }
