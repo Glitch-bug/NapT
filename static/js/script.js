@@ -143,7 +143,7 @@ Mover.prototype.move = function(){
 var ping_movers = [];
 
 var ping_pangs = document.querySelectorAll(".ping-pongs");
-for(let i = 0; i< ping_pongs.length; i++){
+for(let i = 0; i< ping_pangs.length; i++){
   var mover = new Mover(ping_pangs[i]);
   mover.update();
   ping_movers.push(mover);
