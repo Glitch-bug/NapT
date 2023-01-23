@@ -10942,15 +10942,20 @@ section {
     width: 80vw;
   }
   #footer {
+    padding: 0px;
     flex-direction: column;
   }
   #footer .center {
     align-self: center;
   }
   #footer .left {
+    padding-left: 0px;
     display: flex;
     flex-direction: row;
     order: 1;
+    margin: 0px;
+    justify-content: space-between;
+    font-size: 1em;
   }
 }
 
