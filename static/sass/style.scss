@@ -988,6 +988,8 @@ section{
         }
 
         .left{
+            display: flex;
+            flex-direction: row;
             order:1;
         }
     }
