@@ -10626,8 +10626,9 @@ section {
   justify-content: space-between;
 }
 #footer .center {
-  align-self: flex-start;
-  padding-top: 5px;
+  align-self: center;
+  padding-top: 0px;
+  margin-right: 10px;
 }
 #footer p {
   color: white;
